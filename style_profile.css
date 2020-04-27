@@ -1,0 +1,107 @@
+*{
+    font-family: 'Montserrat';
+    margin: 0; 
+    padding: 0;
+}
+body{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/ap.png');
+     background-size: auto;
+     background-position: center;
+
+}
+.boom{left:5%;
+    margin: 10px 20px;
+    background-color: rgba(253, 253, 253, 0.4);
+    width: 280px;
+    height: auto;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn{
+    float:right;
+    cursor: pointer;
+    border: 0;
+    background: linear-gradient(to right,#696969,#fff);
+    width: 80px;
+    display: block;
+    text-align: center;
+    border: 2px solid #696969;
+    padding: 10px 8px;
+    outline: none;
+    color: black;
+    text-decoration: none;
+    font-family: 'Comic Sans Ms';
+}
+.btn:hover{
+    width: 80px;
+    color: white;
+    background: linear-gradient(to left,#696969,#fff);
+
+}
+.title{padding: 10px;
+    color: gray;
+    text-transform: capitalize;
+    margin-left: 30px;
+    font-size: 80px;
+    max-width: fit-content;
+    color: whitesmoke;
+    text-shadow: 1px 1px gray;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    z-index:99;
+    position:relative;  
+    margin-top: 15px;
+}
+hr{
+    width:90%;
+    text-align:left;
+    margin-left: 20px;
+    color: #696969;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white transparent;
+    padding: 5px 20px;
+    transition: 0.6s ease;
+    font-family: Montserrat;
+}
+ul li a:hover{
+    color: gray;
+    background-color: white;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+ul li.active a{
+    color: gray;
+    background-color: white;
+}
+.btn1{
+    margin: 10px 10px;
+    background: linear-gradient(to right,#696969,#fff);
+    color: #696969;
+    text-decoration: none;
+    outline: none;
+    padding: 10px 8px;
+    cursor: pointer;
+    font-size: medium;
+    border: 0;
+    width: 60px;
+    margin: 10px 20px;
+    text-align: center;
+    font-family: 'Comic Sans Ms';
+
+}
+.btn1:hover{
+    widows: 80px;
+    color: white;
+    background: linear-gradient(to left,#696969,#fff);
+}

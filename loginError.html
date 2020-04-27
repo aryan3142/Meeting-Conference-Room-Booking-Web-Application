@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            Creations
+        </title>
+        <link type="text/css" rel="stylesheet" href="css/style_login.css" />
+    </head>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Book</a></li>
+            <li class="active"><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+            </div>
+			
+            <form action='Login' method='post' id="Login" class="input-group" style="margin-top:15px;">
+			  <div  style="margin-left:40px;">
+			  Username or Password wrong</div><br>
+                <input type="text" class="input-field" name="User" placeholder="User Id" required>
+                <input type="password" class="input-field" name="pass" placeholder="Enter Password" required>
+                <br>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                 <input type="submit" value="Login"/>
+   
+            </form>
+            <form action='Register' method='post' id="Register" class="input-group" style="margin-top:15px;">
+                <input type="text" class="input-field" name="user" placeholder="User Id" required>
+                <input type="text" class="input-field" name="name" placeholder="Full Name" required>
+                <input type="number" class="input-field" name="phone" placeholder="Phone Number" required>
+                <input type="email" class="input-field" name="email" placeholder="Email Id" required>
+                <input type="password" class="input-field" name="pass" placeholder="Password" required>
+                <br>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <input type="submit" value="Register"/>
+
+            </form>
+        </div>
+<script>
+    var x = document.getElementById("Login");
+    var y = document.getElementById("Register");
+    var z = document.getElementById("btn");
+
+    function Register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+
+     
+    }
+    function Login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script>
+</body>
+</html>
